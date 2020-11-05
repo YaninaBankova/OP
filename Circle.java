@@ -1,7 +1,7 @@
 package edu.smg;
 
 public class Circle {
-	public double radius;
+	private double radius;
 	public Circle() {
 		radius = 1;
 	}
@@ -16,5 +16,8 @@ public class Circle {
 	}
 	public void setRadius(double newRadius) {
 		radius = newRadius;
+	}
+	public double getRadius() {
+		return radius;
 	}
 }

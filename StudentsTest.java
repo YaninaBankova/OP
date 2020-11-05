@@ -19,11 +19,11 @@ public class StudentsTest {
 	public static void hasScholarship(Students student[]) {
 		for(Students st : student) {
 			if(goodGrades(st)) {
-				System.out.println(st.name + " has scholarship!");
+				System.out.println(st.getName() + " has scholarship!");
 			}
 		}
 	}
 	public static boolean goodGrades(Students st) {
-		return st.grade > 5.5;
+		return st.getGrade() > 5.5;
 	}
 }
