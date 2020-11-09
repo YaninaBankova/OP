@@ -1,9 +1,9 @@
 package edu.smg;
 
 public class Fan {
-	public final int SLOW = 1;
-	public final int MEDIUM = 2;
-	public final int FAST = 3;
+	public static final int SLOW = 1;
+	public static final int MEDIUM = 2;
+	public static final int FAST = 3;
 	private int speed;
 	private boolean switchedOn;
 	private double radius;
@@ -47,11 +47,11 @@ public class Fan {
 		this.color = color;
 	}
 	
-	public void toString(int getSpeed, double getRadius, boolean getSwitchedOn, String getColor) {
+	public String toString(int getSpeed, double getRadius, boolean getSwitchedOn, String getColor) {
 		if(getSwitchedOn) {
-			System.out.println("  Speed: " + getSpeed + "\n  Color: " + getColor + "\n  Radius: " + getRadius);
+			return "  Speed: " + getSpeed + "\n  Color: " + getColor + "\n  Radius: " + getRadius;
 		} else {
-			System.out.println("  Color: " + getColor + "\n  Radius: " + getRadius + "\n  The fan is off.");
+			return "  Color: " + getColor + "\n  Radius: " + getRadius + "\n  The fan is off.";
 		}
 	}
 }

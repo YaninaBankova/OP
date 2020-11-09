@@ -5,8 +5,8 @@ import java.util.Date;
 public class Account {
 	private int id;
 	private double balance;
-	private double yearInterestRate;
-	private static Date dateCreated = new Date();
+	private static double yearInterestRate;
+	private Date dateCreated = new Date();
 	
 	Account(){
 		setId(0);
@@ -35,13 +35,13 @@ public class Account {
 	}
 
 	public void setYearInterestRate(double yearInterestRate) {
-		this.yearInterestRate = yearInterestRate;
+		Account.yearInterestRate = yearInterestRate;
 	}
 	public Date getDateCreated() {
 		return dateCreated;
 	}
 	
-	public double getMonthlyInterestRate() {
+	public static double getMonthlyInterestRate() {
 		return yearInterestRate / 12;
 	}
 	public double getMonthlyInterest() {

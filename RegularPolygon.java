@@ -45,10 +45,10 @@ public class RegularPolygon {
 		setX(x);
 		setY(y);
 	}
-	public void getPerimeter(int n, double sideLength) {
-		System.out.println("The perimeter is " + (n * sideLength));
+	public double getPerimeter(int n, double sideLength) {
+		return (n * sideLength);
 	}
-	public void getArea(int n, double sideLength) {
-		System.out.println("The area is " + ((n * sideLength * sideLength) / (4 * Math.tan(Math.PI / n))));
+	public double getArea(int n, double sideLength) {
+		return ((n * sideLength * sideLength) / (4 * Math.tan(Math.PI / n)));
 	}
 }
