@@ -14,6 +14,10 @@ public class Account {
 		setYearInterestRate(0);
 	}
 
+	Account(int id, double balance){
+		setId(id);
+		setBalance(balance);
+	}
 	public int getId() {
 		return id;
 	}
@@ -30,11 +34,11 @@ public class Account {
 		this.balance = balance;
 	}
 
-	public double getYearInterestRate() {
+	public static double getYearInterestRate() {
 		return yearInterestRate;
 	}
 
-	public void setYearInterestRate(double yearInterestRate) {
+	public static void setYearInterestRate(double yearInterestRate) {
 		Account.yearInterestRate = yearInterestRate;
 	}
 	public Date getDateCreated() {

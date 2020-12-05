@@ -5,7 +5,7 @@ public class RegularPolygon {
 	private double sideLength;
 	private double x;
 	private double y;
-	RegularPolygon(){
+	public RegularPolygon(){
 		setN(3);
 		setSideLength(1);
 		setX(0);
@@ -35,13 +35,15 @@ public class RegularPolygon {
 	public void setY(double y) {
 		this.y = y;
 	}
-	RegularPolygon(double sideLength){
-		this.sideLength = sideLength;
+	public RegularPolygon(int n, double sideLength){
+		setN(n);
+		setSideLength(sideLength);
 		setX(0);
 		setY(0);
 	}
-	RegularPolygon(double sideLength, double x, double y){
-		this.sideLength = sideLength;
+	public RegularPolygon(int n, double sideLength, double x, double y){
+		setN(n);
+		setSideLength(sideLength);
 		setX(x);
 		setY(y);
 	}
